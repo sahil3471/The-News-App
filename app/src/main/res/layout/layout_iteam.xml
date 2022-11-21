@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="275dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardview"
+        app:neumorph_shadowColorDark="#FFFFFF"
+        app:neumorph_shadowColorLight="#1E6091"
+        app:neumorph_shadowElevation="1.3dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+            <soup.neumorphism.NeumorphTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/mainheading"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                app:neumorph_shadowElevation="0dp"
+                app:neumorph_shadowColorLight="@color/black"
+                app:neumorph_shadowColorDark="@color/black"
+                android:textColor="#FEFFFF"
+                android:text="Main heading display here main heading display here main heading display here"
+                android:textStyle="bold"
+                android:textSize="20sp">
+
+            </soup.neumorphism.NeumorphTextView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <soup.neumorphism.NeumorphTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="6"
+                    android:padding="5dp"
+                    android:id="@+id/content"
+                    android:textSize="15sp"
+                    android:textColor="#41505B"
+                    app:neumorph_shadowColorLight="@color/black"
+                    app:neumorph_shadowColorDark="@color/black"
+                    android:text="Main content main content">
+
+                </soup.neumorphism.NeumorphTextView>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/imageview"
+                    android:src="@drawable/ic_launcher_background">
+
+                </ImageView>
+
+            </LinearLayout>
+
+
+                <soup.neumorphism.NeumorphTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="By Sahil"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+                    app:neumorph_shadowColorLight="@color/black"
+                    app:neumorph_shadowColorDark="@color/black"
+                    android:id="@+id/author"
+                    android:textColor="#7A48D1"
+                    android:padding="5dp">
+
+                </soup.neumorphism.NeumorphTextView>
+
+    <soup.neumorphism.NeumorphTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/time"
+        android:padding="5dp"
+        android:textColor="#a8d5e2"
+        app:neumorph_shadowColorLight="@color/black"
+        app:neumorph_shadowColorDark="@color/black"
+        android:text="Published At"
+        android:textStyle="bold"
+        android:textSize="12sp">
+
+    </soup.neumorphism.NeumorphTextView>
+
+
+        </LinearLayout>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+</RelativeLayout>
